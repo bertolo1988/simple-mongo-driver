@@ -40,7 +40,7 @@ describe('Mongo', () => {
 
   it('should connect and disconnect to local Mongo', async () => {
     Mongo.isConnected().should.be.false()
-    let db = await Mongo.connect(TEST_CONFIG.environment, TEST_CONFIG.database)
+    let db = await Mongo.connect(TEST_CONFIG.database, TEST_CONFIG.environment)
     isDatabase(db).should.be.true()
     isDatabase(Mongo.getDatabase()).should.be.true()
     Mongo.isConnected().should.be.true()
@@ -50,7 +50,7 @@ describe('Mongo', () => {
 
   it('should succesfully drop database and check that is empty', async () => {
     Mongo.isConnected().should.be.false()
-    let db = await Mongo.connect(TEST_CONFIG.environment, TEST_CONFIG.database)
+    let db = await Mongo.connect(TEST_CONFIG.database, TEST_CONFIG.environment)
     isDatabase(db).should.be.true()
     Mongo.isConnected().should.be.true()
     let collection = db.collection('test-collection')

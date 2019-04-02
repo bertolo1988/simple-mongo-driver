@@ -29,7 +29,7 @@ function getDatabase() {
   return database
 }
 
-async function connect(inputEnvironment, inputConfig) {
+async function connect(inputConfig, inputEnvironment) {
   if (isConnected()) {
     return database
   }
