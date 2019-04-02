@@ -2,9 +2,7 @@
 
 A simpler facade for mongodb node.js driver
 
-[![npm version](https://badge.fury.io/js/simple-mongo-driver.svg)](https://badge.fury.io/js/simple-mongo-driver)
-
-[![Build Status](https://travis-ci.org/bertolo1988/simple-mongo-driver.svg?branch=master)](https://travis-ci.org/bertolo1988/simple-mongo-driver)
+[![npm version](https://badge.fury.io/js/simple-mongo-driver.svg)](https://badge.fury.io/js/simple-mongo-driver) [![Build Status](https://travis-ci.org/bertolo1988/simple-mongo-driver.svg?branch=master)](https://travis-ci.org/bertolo1988/simple-mongo-driver)
 
 ## Install
 
