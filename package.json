@@ -1,0 +1,43 @@
+{
+  "name": "simple-mongo-driver",
+  "version": "1.0.0",
+  "description": "A new and simpler facade for mongodb node.js driver",
+  "main": "./src/Mongo.js",
+  "dependencies": {
+    "mongodb": "^3.2.2"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.11",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "mocha": "^6.0.2",
+    "prettier": "^1.14.3",
+    "should": "^13.2.3"
+  },
+  "scripts": {
+    "beautify": "eslint --fix .",
+    "clean": "rm -rf node_modules",
+    "lint": "eslint .",
+    "mongo": "docker run -d -p 27017:27017 mongo",
+    "test": "NODE_ENV=test mocha --recursive",
+    "test:debug": "NODE_ENV=test mocha --inspect-brk --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bertolo1988/simple-mongo-driver.git"
+  },
+  "keywords": [
+    "driver",
+    "mongo",
+    "mongodb",
+    "facade",
+    "connector"
+  ],
+  "author": "bertolo1988 <tiagobertolo@gmail.com> (https://github.com/bertolo1988)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bertolo1988/simple-mongo-driver/issues"
+  },
+  "homepage": "https://github.com/bertolo1988/simple-mongo-driver#readme"
+}
