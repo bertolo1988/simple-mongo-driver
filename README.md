@@ -4,7 +4,7 @@ A simpler facade for mongodb node.js driver
 
 ## Install
 
-`npm i --save simple-mongo-driver``
+`npm i --save simple-mongo-driver`
 
 ## How to use
 

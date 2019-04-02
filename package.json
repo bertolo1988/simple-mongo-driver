@@ -1,8 +1,9 @@
 {
   "name": "simple-mongo-driver",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A new and simpler facade for mongodb node.js driver",
   "main": "./src/Mongo.js",
+  "private": false,
   "dependencies": {
     "mongodb": "^3.2.2"
   },
